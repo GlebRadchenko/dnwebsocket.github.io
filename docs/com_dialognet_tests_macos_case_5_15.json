@@ -1,6 +1,6 @@
 {
    "agent": "com.dialognet.Tests-macOS",
-   "behavior": "NON-STRICT",
+   "behavior": "OK",
    "behaviorClose": "OK",
    "case": 59,
    "closedByMe": false,
@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text Message fragmented into 2 fragments, then Continuation Frame with FIN = false where there is nothing to continue, then unfragmented Text Message, all sent in one chop.",
    "droppedByMe": true,
-   "duration": 1,
+   "duration": 2,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "NON-STRICT": [],
@@ -28,13 +28,19 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=59&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: bGRkY2d1cGVtZXFuZXBzbA==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: JP762Acmu/OsN4B45Ygo+ozuKt4=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=59&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: ZXJveG9oYmVtbGxycnFlcA==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 2ozXP/JVoMjxjJweUMjOdaiLLp8=\r\n\r\n",
    "id": "5.15",
    "isServer": true,
    "localCloseCode": 1000,
    "localCloseReason": null,
-   "received": [],
+   "received": [
+      [
+         "message",
+         "fragment1fragment2",
+         false
+      ]
+   ],
    "remoteCloseCode": 1002,
    "remoteCloseReason": null,
    "reportCompressionRatio": false,
@@ -42,13 +48,15 @@
    "result": "Actual events match at least one expected.",
    "resultClose": "Connection was properly closed",
    "rxFrameStats": {
+      "1": 1,
       "8": 1
    },
    "rxOctetStats": {
       "8": 1,
+      "24": 1,
       "229": 1
    },
-   "started": "2018-02-09T14:53:51.731Z",
+   "started": "2018-02-10T12:51:29.593Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 2,
@@ -176,8 +184,27 @@
       [
          "RO",
          [
+            24,
+            "8192a4656decc2170c8bc900039895031f8dc3080882d057"
+         ]
+      ],
+      [
+         "RF",
+         [
+            18,
+            "fragment1fragment2"
+         ],
+         1,
+         true,
+         0,
+         true,
+         "a4656dec"
+      ],
+      [
+         "RO",
+         [
             8,
-            "8882755042c576ba"
+            "8882425cef8e41b6"
          ]
       ],
       [
@@ -190,7 +217,7 @@
          true,
          0,
          true,
-         "755042c5"
+         "425cef8e"
       ],
       [
          "TF",

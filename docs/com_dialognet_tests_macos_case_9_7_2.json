@@ -2,13 +2,13 @@
    "agent": "com.dialognet.Tests-macOS",
    "behavior": "OK",
    "behaviorClose": "OK",
-   "case": 280,
+   "case": 292,
    "closedByMe": true,
    "createStats": true,
    "createWirelog": true,
    "description": "Send 1000 text messages of payload size 16 to measure implementation/network RTT (round trip time) / latency.",
    "droppedByMe": true,
-   "duration": 321,
+   "duration": 766,
    "expectation": "Receive echo'ed text messages (with payload as sent). Timeout case after 60 secs.",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=280&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: dGFzeGx2dHlxdWtidXZhdg==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Z0n7mPDVtooKLR8eKgw7iz8KpY4=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=292&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: cWx0cHF0aGV0cXZzcXV2bw==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: qol+zbu+M3dcDZnkzoZ9hm78bso=\r\n\r\n",
    "id": "9.7.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "22": 1000,
       "230": 1
    },
-   "started": "2018-02-09T14:49:56.761Z",
+   "started": "2018-02-10T13:02:13.173Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1000,
@@ -62,7 +62,7 @@
          "RO",
          [
             230,
-            "474554202f72756e436173653f636173653d323830266167656e743d636f6d2e6469616c6f676e65742e54657374732d6d61634f5320485454502f312e310d0a ..."
+            "474554202f72756e436173653f636173653d323932266167656e743d636f6d2e6469616c6f676e65742e54657374732d6d61634f5320485454502f312e310d0a ..."
          ]
       ],
       [
@@ -111,7 +111,7 @@
          "RO",
          [
             8,
-            "88822fdd341d2c35"
+            "888241e890b04200"
          ]
       ],
       [
@@ -124,7 +124,7 @@
          true,
          0,
          true,
-         "2fdd341d"
+         "41e890b0"
       ]
    ]
 }

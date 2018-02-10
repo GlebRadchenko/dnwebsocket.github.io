@@ -1,14 +1,14 @@
 {
    "agent": "com.dialognet.Tests-macOS",
-   "behavior": "NON-STRICT",
+   "behavior": "OK",
    "behaviorClose": "OK",
    "case": 37,
    "closedByMe": false,
    "createStats": true,
    "createWirelog": true,
    "description": "Send small text message, then send frame with reserved non-control <b>Opcode = 5</b>, then send Ping.",
-   "droppedByMe": true,
-   "duration": 3,
+   "droppedByMe": false,
+   "duration": 2,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since reserved opcode frame is used. A Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,43 +28,47 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=37&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: ZHFweW1nZ2JsZnRqc25lYg==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: IDgErOsMSEtyM9RHWIDXmPp6qqw=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=37&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: cGFydHl5dXhweWZoeHZnYg==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: MMaNNo/L0gTjsN4wa/IYUYog+kY=\r\n\r\n",
    "id": "4.1.3",
    "isServer": true,
-   "localCloseCode": 1000,
+   "localCloseCode": null,
    "localCloseReason": null,
-   "received": [],
-   "remoteCloseCode": 1002,
+   "received": [
+      [
+         "message",
+         "Hello, world!",
+         false
+      ]
+   ],
+   "remoteCloseCode": null,
    "remoteCloseReason": null,
    "reportCompressionRatio": false,
    "reportTime": false,
    "result": "Actual events match at least one expected.",
    "resultClose": "Connection was properly closed",
    "rxFrameStats": {
-      "8": 1
+      "1": 1
    },
    "rxOctetStats": {
-      "8": 1,
+      "19": 1,
       "229": 1
    },
-   "started": "2018-02-09T14:53:30.762Z",
+   "started": "2018-02-10T12:51:18.274Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
       "5": 1,
-      "8": 1,
       "9": 1
    },
    "txOctetStats": {
       "2": 2,
-      "4": 1,
       "15": 1,
       "206": 1
    },
-   "wasClean": true,
+   "wasClean": false,
    "wasCloseHandshakeTimeout": false,
-   "wasNotCleanReason": null,
+   "wasNotCleanReason": "peer dropped the TCP connection without previous WebSocket closing handshake",
    "wasOpenHandshakeTimeout": false,
    "wasServerConnectionDropTimeout": false,
    "wirelog": [
@@ -156,43 +160,21 @@
       [
          "RO",
          [
-            8,
-            "888230cdda013327"
+            19,
+            "818daed6be92e6b3d2fec1fa9ee5c1a4d2f68f"
          ]
       ],
       [
          "RF",
          [
-            2,
-            "0x03ea"
+            13,
+            "Hello, world!"
          ],
-         8,
+         1,
          true,
          0,
          true,
-         "30cdda01"
-      ],
-      [
-         "TF",
-         [
-            2,
-            "0x03e8"
-         ],
-         8,
-         true,
-         0,
-         null,
-         null,
-         null,
-         false
-      ],
-      [
-         "TO",
-         [
-            4,
-            "880203e8"
-         ],
-         false
+         "aed6be92"
       ]
    ]
 }

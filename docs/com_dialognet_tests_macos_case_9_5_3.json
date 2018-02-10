@@ -2,13 +2,13 @@
    "agent": "com.dialognet.Tests-macOS",
    "behavior": "OK",
    "behaviorClose": "OK",
-   "case": 275,
+   "case": 281,
    "closedByMe": true,
    "createStats": true,
    "createWirelog": true,
    "description": "Send text message message with payload of length 1 * 2**20 (1M). Sent out data in chops of 256 octets.",
    "droppedByMe": true,
-   "duration": 31445,
+   "duration": 2205,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=275&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: ZWttYXZnY3ZqcXB4cGxoaA==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: C+9iIiBfkvbKT6WwR9ZwgV5a/pM=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=281&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: aGN1bm1ncXhmc3FuZ2d2Zg==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 9Kj0oSw7POGXzOUP++1J/xrRIV4=\r\n\r\n",
    "id": "9.5.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -39,11 +39,12 @@
    "rxOctetStats": {
       "8": 1,
       "230": 1,
-      "482": 1,
-      "65068": 1,
-      "65536": 15
+      "34498": 1,
+      "40492": 1,
+      "56096": 1,
+      "65536": 14
    },
-   "started": "2018-02-09T14:47:48.169Z",
+   "started": "2018-02-10T13:01:39.206Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -65,7 +66,7 @@
          "RO",
          [
             230,
-            "474554202f72756e436173653f636173653d323735266167656e743d636f6d2e6469616c6f676e65742e54657374732d6d61634f5320485454502f312e310d0a ..."
+            "474554202f72756e436173653f636173653d323831266167656e743d636f6d2e6469616c6f676e65742e54657374732d6d61634f5320485454502f312e310d0a ..."
          ]
       ],
       [
@@ -106,7 +107,7 @@
          "RO",
          [
             8,
-            "88828ee537d88d0d"
+            "8882ab68dcb9a880"
          ]
       ],
       [
@@ -119,7 +120,7 @@
          true,
          0,
          true,
-         "8ee537d8"
+         "ab68dcb9"
       ]
    ]
 }

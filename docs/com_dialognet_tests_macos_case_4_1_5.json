@@ -7,8 +7,8 @@
    "createStats": true,
    "createWirelog": true,
    "description": "Send small text message, then send frame with reserved non-control <b>Opcode = 7</b> and non-empty payload, then send Ping.",
-   "droppedByMe": true,
-   "duration": 3,
+   "droppedByMe": false,
+   "duration": 6,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since reserved opcode frame is used. A Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,11 +28,11 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=39&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: dHNzdml0eWdzZm9tZnFseA==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: fCaDWuHdscV6NXcamLLcdKm2I0M=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=39&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: bWtqc3Z4Z3lid3ZpcHZmbw==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: tdA8wShXUNVcmVmr20zZWghFpn0=\r\n\r\n",
    "id": "4.1.5",
    "isServer": true,
-   "localCloseCode": 1000,
+   "localCloseCode": null,
    "localCloseReason": null,
    "received": [
       [
@@ -41,36 +41,33 @@
          false
       ]
    ],
-   "remoteCloseCode": 1002,
+   "remoteCloseCode": null,
    "remoteCloseReason": null,
    "reportCompressionRatio": false,
    "reportTime": false,
    "result": "Actual events match at least one expected.",
    "resultClose": "Connection was properly closed",
    "rxFrameStats": {
-      "1": 1,
-      "8": 1
+      "1": 1
    },
    "rxOctetStats": {
-      "8": 1,
       "19": 1,
       "229": 1
    },
-   "started": "2018-02-09T14:53:32.820Z",
+   "started": "2018-02-10T12:51:19.297Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
       "7": 1,
-      "8": 1,
       "9": 1
    },
    "txOctetStats": {
-      "1": 20,
+      "1": 32,
       "206": 1
    },
-   "wasClean": true,
+   "wasClean": false,
    "wasCloseHandshakeTimeout": false,
-   "wasNotCleanReason": null,
+   "wasNotCleanReason": "peer dropped the TCP connection without previous WebSocket closing handshake",
    "wasOpenHandshakeTimeout": false,
    "wasServerConnectionDropTimeout": false,
    "wirelog": [
@@ -280,18 +277,10 @@
          true
       ],
       [
-         "TO",
-         [
-            1,
-            "65"
-         ],
-         true
-      ],
-      [
          "RO",
          [
             19,
-            "818da2102af6ea75469acd3c0a81cd62469283"
+            "818d3ee2133876877f5451ce334f51907f5c1f"
          ]
       ],
       [
@@ -304,7 +293,15 @@
          true,
          0,
          true,
-         "a2102af6"
+         "3ee21338"
+      ],
+      [
+         "TO",
+         [
+            1,
+            "65"
+         ],
+         true
       ],
       [
          "TO",
@@ -315,37 +312,100 @@
          true
       ],
       [
-         "RO",
+         "TO",
          [
-            8,
-            "8882c942202ccaa8"
-         ]
+            1,
+            "6c"
+         ],
+         true
       ],
       [
-         "RF",
+         "TO",
          [
-            2,
-            "0x03ea"
+            1,
+            "6f"
          ],
-         8,
-         true,
-         0,
-         true,
-         "c942202c"
+         true
       ],
       [
-         "TF",
+         "TO",
          [
-            2,
-            "0x03e8"
+            1,
+            "2c"
          ],
-         8,
-         true,
-         0,
-         null,
-         null,
-         null,
-         false
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "20"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "77"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "6f"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "72"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "6c"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "64"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "21"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "89"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "00"
+         ],
+         true
       ]
    ]
 }

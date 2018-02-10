@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=2&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: ZmJ1a3FlZ2xndGFuamxpbQ==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 9OEAuLS+HwwRL0XQrvWzukPhL7Y=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=2&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: Z3F0ZGdocGRpaHRkbG9icg==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: b20Mxd01uBBdzakfP7ZHPULlemA=\r\n\r\n",
    "id": "1.1.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -55,7 +55,7 @@
       "131": 1,
       "228": 1
    },
-   "started": "2018-02-09T14:52:56.176Z",
+   "started": "2018-02-10T12:51:02.868Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -117,7 +117,7 @@
          "RO",
          [
             131,
-            "81fd418b52806ba178aa6ba178aa6ba178aa6ba178aa6ba178aa6ba178aa6ba178aa6ba178aa6ba178aa6ba178aa6ba178aa6ba178aa6ba178aa6ba178aa6ba1 ..."
+            "81fd27cc24b50de60e9f0de60e9f0de60e9f0de60e9f0de60e9f0de60e9f0de60e9f0de60e9f0de60e9f0de60e9f0de60e9f0de60e9f0de60e9f0de60e9f0de6 ..."
          ]
       ],
       [
@@ -130,7 +130,7 @@
          true,
          0,
          true,
-         "418b5280"
+         "27cc24b5"
       ],
       [
          "TF",
@@ -158,7 +158,7 @@
          "RO",
          [
             8,
-            "88825481f0a55769"
+            "8882d86aa0e4db82"
          ]
       ],
       [
@@ -171,7 +171,7 @@
          true,
          0,
          true,
-         "5481f0a5"
+         "d86aa0e4"
       ]
    ]
 }

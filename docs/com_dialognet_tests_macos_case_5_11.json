@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send unfragmented Text Message after Continuation Frame with FIN = true, where there is nothing to continue, sent in octet-wise chops.",
    "droppedByMe": true,
-   "duration": 5,
+   "duration": 4,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=55&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: ZGd1bW14bnBtY2NramRzaw==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: LeALL9HbvoM804N2PSDT2tCAXh8=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=55&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: aG9jb3l0eW5rYXRib25iZQ==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: bzcgp6GIDNbKpP6Ivp2RFXYsCNU=\r\n\r\n",
    "id": "5.11",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "8": 1,
       "229": 1
    },
-   "started": "2018-02-09T14:53:47.997Z",
+   "started": "2018-02-10T12:51:27.490Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -49,7 +49,7 @@
       "8": 1
    },
    "txOctetStats": {
-      "1": 30,
+      "1": 29,
       "206": 1
    },
    "wasClean": true,
@@ -338,18 +338,10 @@
          true
       ],
       [
-         "TO",
-         [
-            1,
-            "65"
-         ],
-         true
-      ],
-      [
          "RO",
          [
             8,
-            "8882e83ede49ebd4"
+            "88824e82f81d4d68"
          ]
       ],
       [
@@ -362,7 +354,7 @@
          true,
          0,
          true,
-         "e83ede49"
+         "4e82f81d"
       ],
       [
          "TF",

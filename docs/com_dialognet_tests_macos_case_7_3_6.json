@@ -7,7 +7,7 @@
    "createStats": true,
    "createWirelog": true,
    "description": "Send a close frame with close code and close reason which is too long (124) - total frame payload 126 octets",
-   "droppedByMe": false,
+   "droppedByMe": true,
    "duration": 2,
    "expectation": "Clean close with protocol error code or dropped TCP connection.",
    "expected": {
@@ -21,24 +21,27 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=221&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: d2xyeHBoeHh1cmd5YnF0YQ==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: nvA6F0bvRkeH+yKD5hiYhLCN8wE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=221&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: bGV5d3J3Y2FzdWdqcGljcA==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: BgstM66VdaC7YbIjiartXEhzkKU=\r\n\r\n",
    "id": "7.3.6",
    "isServer": true,
    "localCloseCode": 1000,
    "localCloseReason": "****************************************************************************************************************************",
    "received": [],
-   "remoteCloseCode": null,
+   "remoteCloseCode": 1002,
    "remoteCloseReason": null,
    "reportCompressionRatio": false,
    "reportTime": false,
    "result": "Actual events match at least one expected.",
    "resultClose": "Connection was properly closed",
-   "rxFrameStats": {},
+   "rxFrameStats": {
+      "8": 1
+   },
    "rxOctetStats": {
+      "8": 1,
       "230": 1
    },
-   "started": "2018-02-09T14:56:38.920Z",
+   "started": "2018-02-10T12:53:39.353Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -47,9 +50,9 @@
       "130": 1,
       "206": 1
    },
-   "wasClean": false,
+   "wasClean": true,
    "wasCloseHandshakeTimeout": false,
-   "wasNotCleanReason": "peer dropped the TCP connection without previous WebSocket closing handshake",
+   "wasNotCleanReason": null,
    "wasOpenHandshakeTimeout": false,
    "wasServerConnectionDropTimeout": false,
    "wirelog": [
@@ -93,6 +96,25 @@
       [
          "KL",
          1
+      ],
+      [
+         "RO",
+         [
+            8,
+            "8882a0a15836a34b"
+         ]
+      ],
+      [
+         "RF",
+         [
+            2,
+            "0x03ea"
+         ],
+         8,
+         true,
+         0,
+         true,
+         "a0a15836"
       ]
    ]
 }
