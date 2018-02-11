@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented text message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 1M.",
    "droppedByMe": true,
-   "duration": 7273,
+   "duration": 269,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=268&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: a3VpZmZvZ2FmcXFocGtldw==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: XFZcNOyQHpnhw/77An14tcVe1ks=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=268&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: ZW1tZm55bXBhbm9kaWt5aQ==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Xq21YPAqEYC6tgKWjyRx/rJ+nG4=\r\n\r\n",
    "id": "9.3.8",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,16 +38,11 @@
    },
    "rxOctetStats": {
       "8": 1,
+      "14": 1,
       "230": 1,
-      "7308": 2,
-      "15916": 1,
-      "23640": 1,
-      "40388": 1,
-      "47124": 1,
-      "54938": 1,
-      "65536": 61
+      "65536": 64
    },
-   "started": "2018-02-10T12:59:04.563Z",
+   "started": "2018-02-11T13:21:13.607Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4,
@@ -111,7 +106,7 @@
          "RO",
          [
             8,
-            "88825139dd3e52d1"
+            "888216d9a2e81531"
          ]
       ],
       [
@@ -124,7 +119,7 @@
          true,
          0,
          true,
-         "5139dd3e"
+         "16d9a2e8"
       ]
    ]
 }

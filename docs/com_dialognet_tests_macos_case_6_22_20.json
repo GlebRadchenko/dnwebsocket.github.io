@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a text message with payload which is valid UTF-8 in one fragment.<br><br>Payload: 0xf29fbfbf",
    "droppedByMe": true,
-   "duration": 3,
+   "duration": 2,
    "expectation": "The message is echo'ed back to us.",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=188&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: anFna3B4d3Z3YWltZmh0dQ==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: SMeyAggUlUIQrJoKnpy2KQl8wsc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=188&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: ZnN1aXZ2andpbGhqZW1udg==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: kXPC7xH0OVHwXuDb8Qan35zSfOA=\r\n\r\n",
    "id": "6.22.20",
    "isServer": true,
    "localCloseCode": 1000,
@@ -55,7 +55,7 @@
       "10": 1,
       "230": 1
    },
-   "started": "2018-02-10T12:53:09.692Z",
+   "started": "2018-02-11T13:14:28.924Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -117,7 +117,7 @@
          "RO",
          [
             10,
-            "8184a9a74dad5b38f212"
+            "8184aed487e15c4b385e"
          ]
       ],
       [
@@ -130,7 +130,7 @@
          true,
          0,
          true,
-         "a9a74dad"
+         "aed487e1"
       ],
       [
          "TF",
@@ -158,7 +158,7 @@
          "RO",
          [
             8,
-            "88822ea195d42d49"
+            "8882cbfd654fc815"
          ]
       ],
       [
@@ -171,7 +171,7 @@
          true,
          0,
          true,
-         "2ea195d4"
+         "cbfd654f"
       ]
    ]
 }

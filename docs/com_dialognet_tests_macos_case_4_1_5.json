@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message, then send frame with reserved non-control <b>Opcode = 7</b> and non-empty payload, then send Ping.",
    "droppedByMe": false,
-   "duration": 6,
+   "duration": 7,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since reserved opcode frame is used. A Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=39&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: bWtqc3Z4Z3lid3ZpcHZmbw==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: tdA8wShXUNVcmVmr20zZWghFpn0=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=39&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: bWdrc3R5aGRuZ25teWZ0YQ==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 1DnFOxWS/h9dE2mnj6aYkFagZ6E=\r\n\r\n",
    "id": "4.1.5",
    "isServer": true,
    "localCloseCode": null,
@@ -54,7 +54,7 @@
       "19": 1,
       "229": 1
    },
-   "started": "2018-02-10T12:51:19.297Z",
+   "started": "2018-02-11T13:12:40.469Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -280,7 +280,7 @@
          "RO",
          [
             19,
-            "818d3ee2133876877f5451ce334f51907f5c1f"
+            "818ddfc5a6bf97a0cad3b0e986c8b0b7cadbfe"
          ]
       ],
       [
@@ -293,7 +293,7 @@
          true,
          0,
          true,
-         "3ee21338"
+         "dfc5a6bf"
       ],
       [
          "TO",

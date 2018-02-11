@@ -202,7 +202,7 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
       <center><a href="http://autobahn.ws/testsuite" title="Autobahn WebSocket Testsuite"><img src="http://autobahn.ws/static/img/ws_protocol_test_report.png"          border="0" width="820" height="46" alt="Autobahn WebSocket Testsuite Report"></img></a></center>
       <center><a href="http://autobahn.ws"           title="Autobahn WebSocket">          <img src="http://autobahn.ws/static/img/ws_protocol_test_report_autobahn.png" border="0" width="300" height="68" alt="Autobahn WebSocket">                 </img></a></center>
       <br/>
-      <p class="case case_ok">com.dialognet.Tests-macOS - <span style="font-size: 1.3em;"><b>Case 5.11</b></span> : Pass - <span style="font-size: 0.9em;"><b>4</b> ms @ 2018-02-10T12:51:27.490Z</a></p>
+      <p class="case case_ok">com.dialognet.Tests-macOS - <span style="font-size: 1.3em;"><b>Case 5.11</b></span> : Pass - <span style="font-size: 0.9em;"><b>6</b> ms @ 2018-02-11T13:12:50.965Z</a></p>
       <p class="case_text_block case_desc"><b>Case Description</b><br/><br/>Send unfragmented Text Message after Continuation Frame with FIN = true, where there is nothing to continue, sent in octet-wise chops.</p>
       <p class="case_text_block case_expect"><b>Case Expectation</b><br/><br/>The connection is failed immediately, since there is no message to continue.</p>
 
@@ -219,14 +219,14 @@ Sec-WebSocket-Version: 13
 Connection: Upgrade
 Host: localhost:9001
 Origin: ws://localhost:9001
-Sec-WebSocket-Key: aG9jb3l0eW5rYXRib25iZQ==
+Sec-WebSocket-Key: dmV1ZHJ5bG9zbWl3b3Fxdw==
 Upgrade: websocket</pre>
       <pre class="http_dump">HTTP/1.1 101 Switching Protocols
 Server: AutobahnTestSuite/0.7.6-0.10.9
 X-Powered-By: AutobahnPython/0.10.9
 Upgrade: WebSocket
 Connection: Upgrade
-Sec-WebSocket-Accept: bzcgp6GIDNbKpP6Ivp2RFXYsCNU=</pre>
+Sec-WebSocket-Accept: +QZNSvYsqwK5hZxfp65GMqGD5Cs=</pre>
       <br/><hr/>
       <h2>Closing Behavior</h2>
       <table>
@@ -315,8 +315,8 @@ Sec-WebSocket-Accept: bzcgp6GIDNbKpP6Ivp2RFXYsCNU=</pre>
          <pre class="wirelog_tx_octets_sync">031 TX OCTETS: 81</pre>
          <pre class="wirelog_tx_octets_sync">032 TX OCTETS: 0d</pre>
          <pre class="wirelog_tx_octets_sync">033 TX OCTETS: 48</pre>
-         <pre class="wirelog_rx_octets">034 RX OCTETS: 88824e82f81d4d68</pre>
-         <pre class="wirelog_rx_frame">035 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASKED=True, MASK=3465383266383164</pre>
+         <pre class="wirelog_rx_octets">034 RX OCTETS: 88820c69aec20f83</pre>
+         <pre class="wirelog_rx_frame">035 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASKED=True, MASK=3063363961656332</pre>
          <pre class="wirelog_rx_frame">               0x03ea</pre>
          <pre class="wirelog_tx_frame">036 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASK=None, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
          <pre class="wirelog_tx_frame">               0x03e8</pre>

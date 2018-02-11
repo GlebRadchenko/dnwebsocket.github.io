@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message after sending a close frame.",
    "droppedByMe": true,
-   "duration": 2,
+   "duration": 1,
    "expectation": "Clean close with normal code. Text message ignored.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=213&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: ZHlqb2VsdXBnYnNiZWlzYw==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: MhRJkdndiTyl71TxG6YewLW6D6k=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=213&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: eWlkd3R0Z3Vwb2J1bHBsaA==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Lswxb7rnJNCmnUQutaUU4hwdorc=\r\n\r\n",
    "id": "7.1.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "8": 1,
       "230": 1
    },
-   "started": "2018-02-10T12:53:31.565Z",
+   "started": "2018-02-11T13:14:46.194Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -125,7 +125,7 @@
          "RO",
          [
             8,
-            "88824340221340a8"
+            "88826520a62e66c8"
          ]
       ],
       [
@@ -138,7 +138,7 @@
          true,
          0,
          true,
-         "43402213"
+         "6520a62e"
       ]
    ]
 }

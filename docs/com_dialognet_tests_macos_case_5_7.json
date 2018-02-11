@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text Message fragmented into 2 fragments, one ping with payload in-between. Octets are sent in frame-wise chops.",
    "droppedByMe": true,
-   "duration": 3,
+   "duration": 4,
    "expectation": "A pong is received, then the message is echo'ed back to us.",
    "expected": {
       "OK": [
@@ -31,8 +31,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=51&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: dmRyeG1mdndjbWJwZ2NrdQ==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 3fE8jTGXLFp1ZAoJIf2mjNJhEVI=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=51&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: bXRpa3Vjc3Vtam5uZ2V3YQ==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: kEqiAovFli1r4GNV1R/csA28jNk=\r\n\r\n",
    "id": "5.7",
    "isServer": true,
    "localCloseCode": 1000,
@@ -61,11 +61,10 @@
    },
    "rxOctetStats": {
       "8": 1,
-      "18": 1,
-      "24": 1,
+      "42": 1,
       "229": 1
    },
-   "started": "2018-02-10T12:51:25.453Z",
+   "started": "2018-02-11T13:12:48.498Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -173,8 +172,8 @@
       [
          "RO",
          [
-            18,
-            "8a8ce50d597295643715c57d380b89623816"
+            42,
+            "8a8c4be674093b8f1a6e6b9615702789156d8192a88c4edbcefe2fbcc5e920af99ea3cbacfe12bb5dcbe"
          ]
       ],
       [
@@ -187,14 +186,7 @@
          true,
          0,
          true,
-         "e50d5972"
-      ],
-      [
-         "RO",
-         [
-            24,
-            "819239ec82125f9ee3755489ec66088af0735e81e77c4dde"
-         ]
+         "4be67409"
       ],
       [
          "RF",
@@ -206,7 +198,7 @@
          true,
          0,
          true,
-         "39ec8212"
+         "a88c4edb"
       ],
       [
          "TF",
@@ -234,7 +226,7 @@
          "RO",
          [
             8,
-            "8882ff79d311fc91"
+            "88822436bdc027de"
          ]
       ],
       [
@@ -247,7 +239,7 @@
          true,
          0,
          true,
-         "ff79d311"
+         "2436bdc0"
       ]
    ]
 }

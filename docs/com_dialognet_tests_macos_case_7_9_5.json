@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with invalid close code 1006",
    "droppedByMe": true,
-   "duration": 2,
+   "duration": 1,
    "expectation": "Clean close with protocol error code or drop TCP",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=240&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: ZW5laGZscW9xcGRjbmdjbA==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: LuldJ4GKT3gkyf3F1GRo74qgapo=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=240&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: b2JjZWt2Z2Znd2hnaXZkYQ==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: MV8jmCNN2rKPHtgixmQlHmE6S2Q=\r\n\r\n",
    "id": "7.9.5",
    "isServer": true,
    "localCloseCode": 1006,
@@ -41,7 +41,7 @@
       "8": 1,
       "230": 1
    },
-   "started": "2018-02-10T12:53:57.311Z",
+   "started": "2018-02-11T13:20:39.463Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -101,7 +101,7 @@
          "RO",
          [
             8,
-            "88827b617de7788b"
+            "88829d14573e9efe"
          ]
       ],
       [
@@ -114,7 +114,7 @@
          true,
          0,
          true,
-         "7b617de7"
+         "9d14573e"
       ]
    ]
 }

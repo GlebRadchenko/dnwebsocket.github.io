@@ -202,7 +202,7 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
       <center><a href="http://autobahn.ws/testsuite" title="Autobahn WebSocket Testsuite"><img src="http://autobahn.ws/static/img/ws_protocol_test_report.png"          border="0" width="820" height="46" alt="Autobahn WebSocket Testsuite Report"></img></a></center>
       <center><a href="http://autobahn.ws"           title="Autobahn WebSocket">          <img src="http://autobahn.ws/static/img/ws_protocol_test_report_autobahn.png" border="0" width="300" height="68" alt="Autobahn WebSocket">                 </img></a></center>
       <br/>
-      <p class="case case_ok">com.dialognet.Tests-macOS - <span style="font-size: 1.3em;"><b>Case 4.1.5</b></span> : Pass - <span style="font-size: 0.9em;"><b>6</b> ms @ 2018-02-10T12:51:19.297Z</a></p>
+      <p class="case case_ok">com.dialognet.Tests-macOS - <span style="font-size: 1.3em;"><b>Case 4.1.5</b></span> : Pass - <span style="font-size: 0.9em;"><b>7</b> ms @ 2018-02-11T13:12:40.469Z</a></p>
       <p class="case_text_block case_desc"><b>Case Description</b><br/><br/>Send small text message, then send frame with reserved non-control <b>Opcode = 7</b> and non-empty payload, then send Ping.</p>
       <p class="case_text_block case_expect"><b>Case Expectation</b><br/><br/>Echo for first message is received, but then connection is failed immediately, since reserved opcode frame is used. A Pong is not received.</p>
 
@@ -219,14 +219,14 @@ Sec-WebSocket-Version: 13
 Connection: Upgrade
 Host: localhost:9001
 Origin: ws://localhost:9001
-Sec-WebSocket-Key: bWtqc3Z4Z3lid3ZpcHZmbw==
+Sec-WebSocket-Key: bWdrc3R5aGRuZ25teWZ0YQ==
 Upgrade: websocket</pre>
       <pre class="http_dump">HTTP/1.1 101 Switching Protocols
 Server: AutobahnTestSuite/0.7.6-0.10.9
 X-Powered-By: AutobahnPython/0.10.9
 Upgrade: WebSocket
 Connection: Upgrade
-Sec-WebSocket-Accept: tdA8wShXUNVcmVmr20zZWghFpn0=</pre>
+Sec-WebSocket-Accept: 1DnFOxWS/h9dE2mnj6aYkFagZ6E=</pre>
       <br/><hr/>
       <h2>Closing Behavior</h2>
       <table>
@@ -305,8 +305,8 @@ Sec-WebSocket-Accept: tdA8wShXUNVcmVmr20zZWghFpn0=</pre>
          <pre class="wirelog_tx_octets_sync">021 TX OCTETS: 87</pre>
          <pre class="wirelog_tx_octets_sync">022 TX OCTETS: 0d</pre>
          <pre class="wirelog_tx_octets_sync">023 TX OCTETS: 48</pre>
-         <pre class="wirelog_rx_octets">024 RX OCTETS: 818d3ee2133876877f5451ce334f51907f5c1f</pre>
-         <pre class="wirelog_rx_frame">025 RX FRAME : OPCODE=1, FIN=True, RSV=0, PAYLOAD-LEN=13, MASKED=True, MASK=3365653231333338</pre>
+         <pre class="wirelog_rx_octets">024 RX OCTETS: 818ddfc5a6bf97a0cad3b0e986c8b0b7cadbfe</pre>
+         <pre class="wirelog_rx_frame">025 RX FRAME : OPCODE=1, FIN=True, RSV=0, PAYLOAD-LEN=13, MASKED=True, MASK=6466633561366266</pre>
          <pre class="wirelog_rx_frame">               Hello, world!</pre>
          <pre class="wirelog_tx_octets_sync">026 TX OCTETS: 65</pre>
          <pre class="wirelog_tx_octets_sync">027 TX OCTETS: 6c</pre>

@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=30&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: bHBpaWVndW12ampraGhjcw==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: zoLEkI9bPSWkyaUhy6DgqenBFRI=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=30&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: aWlvcGxuZmNodXR1Z25weQ==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: bw1PEJQxWkjApT3/eG45dK9JYkU=\r\n\r\n",
    "id": "3.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -52,11 +52,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "8": 1,
-      "19": 1,
+      "27": 1,
       "229": 1
    },
-   "started": "2018-02-10T12:51:14.823Z",
+   "started": "2018-02-11T13:12:34.613Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -163,8 +162,8 @@
       [
          "RO",
          [
-            19,
-            "818d3a95ddda72f0b1b655b9fdad55e7b1be1b"
+            27,
+            "818d984fd397d02abffbf763f3e0f73dbff3b9888229fc11382a16"
          ]
       ],
       [
@@ -177,14 +176,7 @@
          true,
          0,
          true,
-         "3a95ddda"
-      ],
-      [
-         "RO",
-         [
-            8,
-            "888264f43efa671e"
-         ]
+         "984fd397"
       ],
       [
          "RF",
@@ -196,7 +188,7 @@
          true,
          0,
          true,
-         "64f43efa"
+         "29fc1138"
       ],
       [
          "TF",

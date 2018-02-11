@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message, then send frame with reserved control <b>Opcode = 13</b>, then send Ping.",
    "droppedByMe": false,
-   "duration": 2,
+   "duration": 3,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since reserved opcode frame is used. A Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=42&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: ZXBkc2pxZGNmdHh0cGVwYQ==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: BkaRU8d250cRP6NeP/OhwmJd0qU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=42&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: Y3Rla292b3RzZXlhcXhudg==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 242/YNRNW5P6Dh6MS3Nv1WjKkfY=\r\n\r\n",
    "id": "4.2.3",
    "isServer": true,
    "localCloseCode": null,
@@ -54,7 +54,7 @@
       "19": 1,
       "229": 1
    },
-   "started": "2018-02-10T12:51:20.767Z",
+   "started": "2018-02-11T13:12:42.629Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -161,7 +161,7 @@
          "RO",
          [
             19,
-            "818d202a6b34684f07584f064b434f58075001"
+            "818d334931527b2c5d3e5c6511255c3b5d3612"
          ]
       ],
       [
@@ -174,7 +174,7 @@
          true,
          0,
          true,
-         "202a6b34"
+         "33493152"
       ]
    ]
 }

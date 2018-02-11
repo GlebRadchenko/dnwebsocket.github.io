@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 64.",
    "droppedByMe": true,
-   "duration": 50267,
+   "duration": 1498,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=270&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: dmlyYmVudHFxY3VyYmplZg==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 3LRCxrhigCw9VCqvimGhP5KXFjw=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=270&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: ZWhheWhzc2FnZ3Z1c3NiaA==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Ogw96rs4gOIxhNgukzYPuXudBKw=\r\n\r\n",
    "id": "9.4.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,15 +38,11 @@
    },
    "rxOctetStats": {
       "8": 1,
+      "14": 1,
       "230": 1,
-      "21910": 1,
-      "55420": 1,
-      "55836": 1,
-      "63924": 1,
-      "65068": 1,
-      "65536": 60
+      "65536": 64
    },
-   "started": "2018-02-10T12:59:21.896Z",
+   "started": "2018-02-11T13:21:15.950Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 65536,
@@ -110,7 +106,7 @@
          "RO",
          [
             8,
-            "888231e026f23208"
+            "8882ffb9af6bfc51"
          ]
       ],
       [
@@ -123,7 +119,7 @@
          true,
          0,
          true,
-         "31e026f2"
+         "ffb9af6b"
       ]
    ]
 }

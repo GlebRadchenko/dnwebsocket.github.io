@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send unsolicited pong with payload. Send ping with payload. Verify pong for ping is received.",
    "droppedByMe": true,
-   "duration": 2,
+   "duration": 3,
    "expectation": "Nothing in reply to own Pong, but Pong with payload echo'ed in reply to Ping. Clean close with normal code.",
    "expected": {
       "OK": [
@@ -26,8 +26,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=25&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: a2J2bnFmdnB4b2xxZ3BnaA==\r\nUpgrade: websocket\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: jOeei5ZtzvpiEWzCfIHhkibgvlA=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=25&agent=com.dialognet.Tests-macOS HTTP/1.1\r\nSec-WebSocket-Version: 13\r\nConnection: Upgrade\r\nHost: localhost:9001\r\nOrigin: ws://localhost:9001\r\nSec-WebSocket-Key: YnF5bmVob3FtaXR1ZXVubg==\r\nUpgrade: websocket\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 7zHhTPFdsvzoTbYuE2Lga3xQQGg=\r\n\r\n",
    "id": "2.9",
    "isServer": true,
    "localCloseCode": 1000,
@@ -53,7 +53,7 @@
       "18": 1,
       "229": 1
    },
-   "started": "2018-02-10T12:51:12.546Z",
+   "started": "2018-02-11T13:12:31.525Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1,
@@ -139,7 +139,7 @@
          "RO",
          [
             18,
-            "8a8ce4849b7694edf511c4f4fa0f88ebfa12"
+            "8a8cd465b031a40cde56f415d148b80ad155"
          ]
       ],
       [
@@ -152,7 +152,7 @@
          true,
          0,
          true,
-         "e4849b76"
+         "d465b031"
       ],
       [
          "TF",
@@ -180,7 +180,7 @@
          "RO",
          [
             8,
-            "88829c5227aa9fba"
+            "8882376cf8e43484"
          ]
       ],
       [
@@ -193,7 +193,7 @@
          true,
          0,
          true,
-         "9c5227aa"
+         "376cf8e4"
       ]
    ]
 }
